@@ -10,7 +10,7 @@ namespace ZKI3
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Введите сообщение");
             string str1 = Convert.ToString(Console.ReadLine());
             Console.WriteLine(str1);
             Console.WriteLine(str1.Length);
@@ -51,7 +51,7 @@ namespace ZKI3
                 foreach (string s in mas)
                     Console.Write(s + " ");
 
-                Console.Write("\n");
+                Console.WriteLine("\n");
 
             for (int i = 1; i < str1.Length; i += 3)
                 str1 = str1.Insert(i, "|");
@@ -104,7 +104,7 @@ namespace ZKI3
 
             else if (ln1 % 2 == 0)
             {
-                for (int i = 0; i < mas1.Length; i++)
+                for (int i = 1; i < mas1.Length-1; i++)
                 {
                     char[] ch = mas1[i].ToCharArray();
                     if (ch[0] == ch[1])
